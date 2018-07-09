@@ -17,16 +17,18 @@
 		<link rel="stylesheet" href="./css/media.css" type="text/css">
 
 		<!-- js declaration -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="./script/script.js"></script>
 		
 </head>
 <body>
 
 	<div class="background_shadow">
-
 	</div>
-	<div id="about" class="min_width">
+	<div id="preloader">
+		<img src="./img/loader.gif" alt="loader">
+	</div>
+	<div id="about" class="min_width tab-content active">
 			<h1 id="about_title_h1" class="about_child">
 					Hi, welcome on my website.
 
@@ -41,11 +43,17 @@
 					In this site you can watch my projects 
 			</p>
 	</div>
+	<div id="web" class="min_width tab-content">
+		<p>
+			treść podstrony web 
+		</p>
+
+	</div>
 
 	<nav>
 		<ul id="nav_ul">
-			<li><a href="about">about</a></li>
-			<li><a href="web">web</a></li>
+			<a href="#about">about</a>
+			<a href="#web">web</a>
 			<li><a href="c++">c++</a></li>
 			<li><a href="pascal">pascal</a></li>
 			<li><a href="arduino">arduino</a></li>
