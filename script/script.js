@@ -20,7 +20,7 @@ $("#preloader").css({
     
 // tab 
 
-    $('#nav_ul').each(function() {
+    $('#nav_links').each(function() {
         const $a = $(this).find('a');
 
         //po kliknięciu na link...
@@ -52,8 +52,13 @@ $("#preloader").css({
     */
 });
 
+
+// it's preload animation no page 
+//
+
 $(window).on('load',function(){
     
+    // css sittings to load animation 
     $("#about_title_h1").css({
         left: "-1360px",
     });
@@ -63,24 +68,29 @@ $(window).on('load',function(){
     $("#about_title_p").css({
         opacity: '0',
     });
-    $("#nav_ul").css({
+    $("#nav_links").css({
        top: '-1000px',
     });
 
 
-
+    // display preloader 
+    $("#preloader").delay(500).fadeOut()
+    /*  
     $("#preloader").css({
-        display : "none",
-    });
-
+            display : "none",
+        });
+    */
   
+
+   //
+
     $("#about_title_h1").delay(100).animate({left: '0px'},1000);
     $("#about_title_h2").delay(500).animate({left: '0px'},1000);
     $("#about_title_p").delay(1000).animate({opacity: '1',},2000);
 
-    $("#nav_ul").delay(500).animate({  
+    $("#nav_links").delay(500).animate({  
     "top" : '0px', 
-    },1000,function(){$("#nav_ul").addClass("Animate");});
+    },1000,function(){$("#nav_links").addClass("Animate");});
 
 
 });

@@ -85,7 +85,7 @@ nav
     height: 70px;
 }
 
-nav ul
+#nav_links
 {
     display: flex;
     width: 1200px;
@@ -99,36 +99,33 @@ nav ul
     
     
 }
-#nav_ul.Animate{
+#nav_links.Animate{
    
     transition        : 0.3s linear;
     transform : rotate(0deg) ;
 }
-nav li{
-    list-style: none;
-    width: 150px;
-    height: 50px; 
-    align-self: center;
-    display: flex;
-    border-radius: 9px;
-    font-size: 23px;
-   transition-duration: 1s;
 
-}
-nav li:hover{
+nav a:hover{
    
     background-color: #44bc4499;
     font-size: 24px;
 }
-nav li a 
+nav a 
 {
+    list-style: none;
     text-decoration: none;
+    align-self: center;
     color: white;
-    height: 100%;
-    width: 100%;
+    width: 150px;
+    height: 50px; 
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 9px;
+    font-size: 23px;
+   transition-duration: 1s;
+   margin-left: 5px;
+
     
 text-transform: uppercase;
 font-family: "Segoe UI",Arial,sans-serif;
@@ -139,7 +136,7 @@ align-self: center;
 
 
 
-#nav_ul a.active {
+#nav_links a.active {
     background: #EC185D;
     color:#fff;
 }
