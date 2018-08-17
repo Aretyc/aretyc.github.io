@@ -137,8 +137,8 @@ align-self: center;
 
 
 #nav_links a.active {
-    background: #EC185D;
-    color:#fff;
+    background-color: #44bc4499;
+    font-size: 24px;
 }
 
 .tab-content {

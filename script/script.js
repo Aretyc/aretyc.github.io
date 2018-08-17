@@ -1,13 +1,5 @@
 
 
-
-
-function  start_animation()
-{
-   
-   
-}
-
 $(document).ready(function(){
 
 $("#preloader").css({
@@ -16,40 +8,6 @@ $("#preloader").css({
 });
 
 
-/*
-    
-// tab 
-
-    $('#nav_links').each(function() {
-        const $a = $(this).find('a');
-
-        //po kliknięciu na link...
-        $a.on('click', function(e) {
-            //podstawiamy pod zmienną $this kliknięty link
-            const $this = $(this);
-
-            //pobieramy href klikniętego linka
-            const href = $this.attr('href');
-            //pobieramy treść na którą wskazuje link
-            const $target = $(href);
-
-            //jeżeli ta treść w ogóle istnieje...
-            if ($target.length) {
-                e.preventDefault(); //przerwij domyślną czynność jeżeli istnieje zawartość zakładki - inaczej niech dziala jak link
-
-                //usuwamy z sąsiednich linków klasę active
-                $this.siblings('a').removeClass('active');
-                //klikniętemu linkowi dajemy klasę active
-                $this.addClass('active');
-
-                //podobne działanie robimy dla treści tabów
-                $target.siblings('.tab-content').removeClass('active');
-                $target.addClass('active');
-            }
-
-        });
-    });
-    */
 });
 
 
@@ -58,36 +16,23 @@ $("#preloader").css({
 
 $(window).on('load',function(){
     
-    // css sittings to load animation 
-    $("#about_title_h1").css({
-        left: "-1360px",
-    });
-    $("#about_title_h2").css({
-        left: "1600px",
-    });
-    $("#about_title_p").css({
-        opacity: '0',
-    });
-    $("#nav_links").css({
-       top: '-1000px',
-    });
-
+   
+    const about_title_h1 = new Standard_animation_2("#about_title_h1",-1360,1,1000,100);
+    const about_title_h2 = new Standard_animation_2("#about_title_h2",1600,1,1000,500);
+    const about_title_p = new Standard_animation_2("#about_title_p",0,0,2000,1000);
+    const nav_links = new Standard_animation_1("#nav_links",-1000,1,1000,500);
+     
 
     // display preloader 
     $("#preloader").delay(500).fadeOut()
-    /*  
-    $("#preloader").css({
-            display : "none",
-        });
-    */
+
+
+   // start animation 
+    
+   about_title_h1.animation();
+   about_title_h2.animation();
+   about_title_p.animation();
   
-
-   //
-
-    $("#about_title_h1").delay(100).animate({left: '0px'},1000);
-    $("#about_title_h2").delay(500).animate({left: '0px'},1000);
-    $("#about_title_p").delay(1000).animate({opacity: '1',},2000);
-
     $("#nav_links").delay(500).animate({  
     "top" : '0px', 
     },1000,function(){$("#nav_links").addClass("Animate");});
