@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1200px) {
+    .min_width
+    {
+        min-width: 1024px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .min_width
+    {
+        min-width: 768px;
+    } 
+}
+@media only screen and (max-width: 768px) {
+    
+    .min_width
+    {
+        min-width: 480px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+        .min_width
+        {
+            min-width: 320px;
+        }
+}
+    
+

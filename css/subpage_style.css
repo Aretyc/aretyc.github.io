@@ -1,0 +1,196 @@
+body
+{
+    margin: 0;
+    background-image: url("../img/background/3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.background_shadow
+{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: #0009;
+ z-index: -1;
+}
+
+#preloader
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.min_width
+{
+    min-width: 1200px;
+    
+}
+
+
+nav 
+{
+    height: 70px;
+    min-height: 70px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    background-color:#000c;
+
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+
+#nav_links {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+}
+
+#nav_links.Animate{
+   
+    transition        : 0.3s linear;
+    transform : rotate(0deg) ;
+}
+
+nav a:hover{
+   
+    background-color: #44bc4499;
+    font-size: 24px;
+}
+nav a 
+{
+    list-style: none;
+    text-decoration: none;
+    align-self: center;
+    color: white;
+    width: 150px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    font-size: 23px;
+   transition-duration: 1s;
+   margin-left: 5px;
+
+    
+text-transform: uppercase;
+font-family: "Segoe UI",Arial,sans-serif;
+font-weight: bold;
+align-self: center;
+}
+
+
+
+
+#nav_links a.active {
+    background-color: #44bc4499;
+    font-size: 24px;
+}
+
+.nav_button
+{
+    display: none;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    min-height: 600px;
+    background-color: #fffc;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 102px;
+    box-shadow: 0px 0px 7px 3px black;
+    color: black;
+    padding: 55px;
+}
+
+.mainElements
+{
+    display: flex;
+    margin-bottom: 50px;
+}
+.main_icons
+{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 6px -2px black
+
+}
+.main_elements_content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 30px;
+    font-family: "Segoe UI",Arial,sans-serif;
+   
+}
+
+.main_elements_content h1
+{
+    margin: 0;
+    font-size: 50px;
+    width: 100%;
+    font-weight: normal;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.main_elements_content p
+{
+    margin: 0;
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 19px;
+}
+.main_elements_content button
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    border: 1px solid #00800066;
+    text-transform: capitalize;
+    font-family: "Segoe UI",Arial,sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #f0f0f0e6;
+    transition: 0.3s linear;
+}
+.main_elements_content button:hover
+{
+    color: white;
+    background-color: #0009;
+    border: 1px solid #000000b3;
+    
+}
+
