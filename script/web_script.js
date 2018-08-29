@@ -70,6 +70,8 @@ var nav = {
 
 $(document).ready(function(){
 
+$('.no_drag').on('dragstart', function(event) { event.preventDefault(); });
+
 $("#preloader").css({
     display : "flex",
 
