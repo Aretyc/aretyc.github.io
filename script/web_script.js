@@ -119,6 +119,10 @@ $('.element_button').click(function(){
 
 });
 
+// gallery 
+
+
+
 });
 
 
@@ -142,11 +146,11 @@ $(window).on('load',function(){
 window.addEventListener('resize',function(){
 
 
-
+///////////////////////////////////////////////////////////////////////////
 
 
     $('body').css({
-        "min-height": window.innerHeight  +"px",
+        //"min-height": window.innerHeight  +"px",
     });
     $('.background_shadow').css({
         height: document.getElementById('body').offsetHeight +"px",
