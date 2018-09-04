@@ -93,6 +93,8 @@ let index= 0;
             if(similar[index]!=undefined)
             {
                 console.log('ofset '+img.offsetWidth + ' window '+window.innerWidth);
+               
+               /*
                 if(img.offsetWidth>=window.innerWidth)
                 {
                     img.style.height="auto";
@@ -105,7 +107,7 @@ let index= 0;
                     img.style.maxWidth= "auto";  
                 }
 
-
+                */
 
 
 
