@@ -47,26 +47,10 @@ let index= 0;
         {
             let element = document.querySelector('.aretycGalleryContainer').style.display='none';
         }
-        function next()
-        {
-            console.log('next');
-            index++;
-            if(index>=length){ index=0;}
-            inner(similar[index].href);
-        }
-        function prev()
-        {
-            console.log('prev');
-            index--;
-            if(index<0){ index=(length-1);}
-            inner(similar[index].href);
-        }
 
-        function click(event,element)
+        // this funcion add loader to gallery 
+        function loader()
         {
-            event.preventDefault();
-            inner(element.href);
-
             let image = document.querySelector(".aretycGalleryFullImage");
             let loader = document.querySelector(".aretycGalleryLoader");
             let arrow = document.querySelectorAll(".aretycGalleryArrow");
@@ -76,12 +60,40 @@ let index= 0;
             for(let i = 0; i<arrow.length; i++){arrow[i].style.display='none';}
 
             image.addEventListener("load",function(){
+                
+               
                 this.style.width="auto";
                 this.style.height="100%";
                 loader.style.display="none";
                 for(let i = 0; i<arrow.length; i++){arrow[i].style.display='flex';}
             });
+        }
 
+
+        function next()
+        {
+            console.log('next');
+            index++;
+            if(index>=length){ index=0;}
+            inner(similar[index].href);
+            loader();
+        }
+        function prev()
+        {
+            console.log('prev');
+            index--;
+            if(index<0){ index=(length-1);}
+            inner(similar[index].href);
+            loader();
+        }
+
+
+        function click(event,element)
+        {
+            event.preventDefault();
+            inner(element.href);
+            loader();
+            
             
             
 
