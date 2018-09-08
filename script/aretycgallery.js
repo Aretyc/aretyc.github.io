@@ -86,9 +86,11 @@ let index= 0;
 
                 right.style.position="relative"; 
                 right.style.right="100px";
+                right.style.padding="0px";
 
                 left.style.position="relative"; 
                 left.style.left="100px";
+                left.style.padding="0px";
                 
              }
             } 

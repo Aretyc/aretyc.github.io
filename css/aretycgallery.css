@@ -83,7 +83,7 @@
 .aretycGalleryClose img
 {
     width: 30px;
-    height: auto;
+    height: 100%;
     cursor: pointer;
    
 }
