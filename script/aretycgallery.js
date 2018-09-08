@@ -18,7 +18,7 @@ let index= 0;
                  <div class="aretycGalleryContent">
 
                 
-                    <div class="aretycGalleryLeft">
+                    <div class="aretycGalleryLeft aretycGalleryArrow">
                          <img class="no_drag" src="./img/aretycGallery/img/left.png" alt="close">
                     </div>
 
@@ -26,7 +26,7 @@ let index= 0;
                        
                     </div>  
 
-                    <div class="aretycGalleryRight">
+                    <div class="aretycGalleryRight aretycGalleryArrow">
                         <img class="no_drag" src="./img/aretycGallery/img/right.png" alt="close">
                     </div>
                  <div>
@@ -37,7 +37,11 @@ let index= 0;
         function inner(href)
         {
             let imageConteiner = document.querySelector(".aretycGalleryImageConteiner");
-            imageConteiner.innerHTML=` <img class="no_drag aretycGalleryFullImage" src="${href}" alt="kalkulator">`;
+            imageConteiner.innerHTML=
+            ` 
+            <img class="no_drag aretycGalleryFullImage" src="${href}" alt="kalkulator">
+            <div class="aretycGalleryLoader"><div></div><div></div><div></div><div></div></div>
+            `;
         }
         function close()
         {
@@ -63,9 +67,28 @@ let index= 0;
             event.preventDefault();
             inner(element.href);
 
-            // delete all elements from table 
+            let image = document.querySelector(".aretycGalleryFullImage");
+            let loader = document.querySelector(".aretycGalleryLoader");
+            let arrow = document.querySelectorAll(".aretycGalleryArrow");
+
+            image.style.width=0;
+            image.style.height=0;
+            for(let i = 0; i<arrow.length; i++){arrow[i].style.display='none';}
+
+            image.addEventListener("load",function(){
+                this.style.width="auto";
+                this.style.height="100%";
+                loader.style.display="none";
+                for(let i = 0; i<arrow.length; i++){arrow[i].style.display='flex';}
+            });
+
+            
+            
+
+            // delete all elements from array 
             similar.splice(0,similar.length);
 
+            //create new array 
             length = 0;
             index = 0;
             for(let i=0; i<elements.length; i++)
