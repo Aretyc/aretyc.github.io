@@ -30,7 +30,7 @@ let index= 0;
                         <img class="no_drag" src="./img/aretycGallery/img/right.png" alt="close">
                     </div>
                  <div>
-             </div> `
+             </div> `;
             $(body).append(text);  
         }
 
@@ -68,12 +68,10 @@ let index= 0;
 
                  right.style.position="absolute";
                  right.style.right="0px";
-                 right.style.aliginSelf="center";
                  right.style.padding="25px";
 
                  left.style.position="absolute";
                  left.style.left="0px";
-                 left.style.aliginSelf="center";
                  left.style.padding="25px";
 
                  
