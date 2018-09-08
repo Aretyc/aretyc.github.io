@@ -57,15 +57,18 @@ let index= 0;
 
             image.style.width=0;
             image.style.height=0;
+            image.style.boxShadow="none";
+
             for(let i = 0; i<arrow.length; i++){arrow[i].style.display='none';}
 
             image.addEventListener("load",function(){
-                
-               
+
                 this.style.width="auto";
                 this.style.height="100%";
+                this.style.boxShadow="0px 0px 4px 2px white";
                 loader.style.display="none";
                 for(let i = 0; i<arrow.length; i++){arrow[i].style.display='flex';}
+
             });
         }
 
@@ -93,9 +96,6 @@ let index= 0;
             event.preventDefault();
             inner(element.href);
             loader();
-            
-            
-            
 
             // delete all elements from array 
             similar.splice(0,similar.length);
@@ -114,10 +114,7 @@ let index= 0;
             }
 
 
-
-            $(".aretycGalleryContainer").css({
-                "display": "flex",
-            });
+            document.querySelector('.aretycGalleryContainer').style.display='flex';
 
         }
 
