@@ -210,7 +210,11 @@ main
 }
 .gallery
 {
-    display: none;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: flex-end;
+   margin-top: 20px;
+
 }
 .gallery  img 
 {
@@ -228,3 +232,9 @@ footer
     background-color: rgba(0, 0, 0, 0.637);
 }
 
+
+video 
+{
+    
+    width: 320px;
+}

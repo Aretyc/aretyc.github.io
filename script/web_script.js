@@ -110,7 +110,8 @@ $('.background_shadow').css({
 $('.element_button').click(function(){
 
    $(this).parent().find(".more_content").toggle(1000,);
-   $(this).parent().find(".gallery").delay(400).toggle(1000);
+   //$(this).parent().find("video").delay(400).toggle(1000);
+   //$(this).parent().find(".gallery").delay(400).toggle(1000);
    
    if(window.innerWidth<=768 ){
     $(this).parent().find(".less_content").toggle(1000);

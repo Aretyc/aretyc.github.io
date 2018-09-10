@@ -40,9 +40,9 @@
         width: 100px;
         height: 100px;
     }
-    .main_elements_content p 
+    .less_content
     {
-        display: none;
+      display: none;
     }
     .main_elements_content
     {
@@ -52,6 +52,14 @@
     .main_elements_content h1 {
         font-size: 40px;
     }
+    .gallery {
+        flex-direction: column;
+    }
+    video{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
 }
 
 
@@ -65,7 +73,7 @@
             margin-top: 51px;
         }
         .main_elements_content {
-            padding-left: 17px;
+            padding-left: 14px;
         }
         .main_elements_content h1 {
             font-size: 25px;
