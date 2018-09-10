@@ -57,10 +57,7 @@ let index= 0;
             let left = document.querySelector('.aretycGalleryLeft');
             let right = document.querySelector('.aretycGalleryRight');
 
-            if(similar[index]!=undefined)
-            {
-                console.log('ofset '+img.offsetWidth + ' window '+window.innerWidth);
-               
+            
              if(window.innerWidth<window.innerHeight)
              {
                  img.style.width="100%";
@@ -91,7 +88,7 @@ let index= 0;
                 left.style.padding="0px";
                 
              }
-            } 
+            
         }
 
         // this funcion add loader to gallery 
@@ -123,7 +120,7 @@ let index= 0;
 
         function next()
         {
-            console.log('next');
+            
             index++;
             if(index>=length){ index=0;}
             inner(similar[index].href);
@@ -132,7 +129,8 @@ let index= 0;
         }
         function prev()
         {
-            console.log('prev');
+           
+
             index--;
             if(index<0){ index=(length-1);}
             inner(similar[index].href);
@@ -146,6 +144,7 @@ let index= 0;
             event.preventDefault();
             inner(element.href);
             loader();
+           
          
 
             // delete all elements from array 
@@ -166,7 +165,7 @@ let index= 0;
 
 
             document.querySelector('.aretycGalleryContainer').style.display='flex';
-
+            
         }
 
        
