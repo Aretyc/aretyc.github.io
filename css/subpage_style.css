@@ -177,6 +177,11 @@ main
     font-weight: lighter;
     font-size: 19px;
 }
+.main_elements_content ul li
+{
+    font-weight: lighter;
+    font-size: 19px;
+}
 .main_elements_content button
 {
     width: 100%;
@@ -232,9 +237,46 @@ footer
     background-color: rgba(0, 0, 0, 0.637);
 }
 
+.gallery-video
+{
+    padding-left: 20px;
+}
 
 video 
 {
     
     width: 320px;
+}
+
+/* table */ 
+.mytable
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    
+}
+.mytable-column
+{
+    width: 150px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.mytable-row
+{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 28px;
+    
+    
+}
+.mytable-row1 
+{
+    background-color: #46c046;
+    font-weight: 600 !important;
 }

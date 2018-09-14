@@ -59,6 +59,10 @@
         width: 100%;
         margin-bottom: 20px;
     }
+    .gallery-video
+    {
+    padding-left: 0px;
+    }
 
 }
 
