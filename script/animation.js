@@ -111,3 +111,74 @@ class TextAnimation1 {
     }
 };
 
+// get all element with this same query selector 
+// left to right 
+
+class Standard_animation_3 {
+    constructor(id,left,opacity,time,delay)
+    {
+        this.id = id;           // id, class or tag element 
+        this.left = left +"px";   // start left 
+        this.opacity=opacity;   // start opacity 
+        this.time = time;       // time animation in ms 
+        this.delay = delay;     // delay time in ms 
+        this.status =  false;   // animation run ones 
+        this.sittings()
+    }
+
+    sittings()
+    {
+
+        $(this.id).css({position: "relative", left: this.left ,opacity: this.opacity}); 
+    }
+
+    animation()
+    {
+
+            $(this.id).css({left: this.left, opacity : this.opacity,});
+
+            
+            let elemens = document.querySelectorAll(this.id);
+            for(let i = 0 ; i<elemens.length; i++)
+            {
+                
+                $(elemens[i]).delay(i*this.delay).animate({left: "0px", opacity: 1,},this.time);
+            }  
+    }
+};
+
+// get all element with this same query selector 
+// left to right 
+
+class Standard_animation_4 {
+    constructor(id,top,opacity,time,delay)
+    {
+        this.id = id;           // id, class or tag element 
+        this.top = top +"px";   // start left 
+        this.opacity=opacity;   // start opacity 
+        this.time = time;       // time animation in ms 
+        this.delay = delay;     // delay time in ms 
+        this.status =  false;   // animation run ones 
+        this.sittings()
+    }
+
+    sittings()
+    {
+
+        $(this.id).css({position: "relative", top: this.top ,opacity: this.opacity}); 
+    }
+
+    animation()
+    {
+
+            $(this.id).css({top: this.top, opacity : this.opacity,});
+
+            
+            let elemens = document.querySelectorAll(this.id);
+            for(let i = 0 ; i<elemens.length; i++)
+            {
+                
+                $(elemens[i]).delay(i*this.delay).animate({top: "0px", opacity: 1,},this.time);
+            }  
+    }
+};

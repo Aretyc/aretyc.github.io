@@ -72,6 +72,8 @@ $(document).ready(function(){
 
 $('.no_drag').on('dragstart', function(event) { event.preventDefault(); });
 
+
+
 $("#preloader").css({
     display : "flex",
 
@@ -132,13 +134,16 @@ $('.element_button').click(function(){
 
 $(window).on('load',function(){
     
-   
+const mainElements = new Standard_animation_3('.mainElements',-300,0,1000,400);
+const nav = new Standard_animation_4('#nav_links a',-100,0,300,400);
   
     // display preloader 
     $("#preloader").delay(500).fadeOut()
 
 
    // start animation 
+   nav.animation();
+  mainElements.animation();
   
 
 
