@@ -6,6 +6,13 @@
     main{
         width: 980px;
     }
+    .mytable-column
+    {
+        width: 108px;
+    }
+    .mytable-row {
+        padding-left: 8px;
+    }
 }
 
 
@@ -21,6 +28,12 @@
     .main_elements_content {
         padding-left: 35px;
         padding-right: 0px;
+    }
+    .mytable-column {
+        width: 87px;
+    }
+    .mytable-column p{
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -63,6 +76,18 @@
     {
     padding-left: 0px;
     }
+    .mytable {
+        flex-direction: column;
+    }
+    .mytable-column {
+        width: 100%;
+    }
+    .mytable-column p {
+
+        font-size: 16px;
+    
+    }
+
 
 }
 

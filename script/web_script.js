@@ -67,11 +67,27 @@ var nav = {
     },
 
 }
+class klasa{
+    constructor()
+    {
+        this.cos=1;
+        //this.funkacja();
+        window.addEventListener('load',this.funkacja);    }
+    funkacja()
+    {
+        let cos = 1;
+        setInterval(function(){
+            console.log(cos);
+            cos++;
+        },300);
+    }
+};
 
 $(document).ready(function(){
 
 $('.no_drag').on('dragstart', function(event) { event.preventDefault(); });
 
+const jakasklasa = new klasa();
 
 
 $("#preloader").css({
