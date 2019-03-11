@@ -143,6 +143,7 @@ main
 {
     display: flex;
     margin-bottom: 50px;
+    width: 100%;
 }
 .main_icons
 {
@@ -156,6 +157,7 @@ main
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     padding-left: 90px;
     padding-right: 30px;
     font-family: "Segoe UI",Arial,sans-serif;

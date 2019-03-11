@@ -1,0 +1,43 @@
+body{
+    background-image: url("../img/background/6.jpeg") !important;
+}
+.active{
+    width: 168px;  
+}
+#about
+{
+    display: flex;
+    font-family: Montserrat;
+    line-height: 35px;
+}
+#about figure{
+    margin-top: 116px;
+}
+#about img{
+    width: 200px;
+}
+#about p{
+    text-align: justify;
+    font-family: Montserrat;
+    line-height: 35px;
+}
+#projects header
+{
+    margin-bottom: 65px;
+}
+.section_header{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Open Sans';
+}
+footer{
+    margin-top: 100px;
+     width: 100%;
+     background-color: #000c;
+     color: white;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+    height: 320px;
+
+ }
