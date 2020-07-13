@@ -196,7 +196,7 @@ let index= 0;
         }
 
 
-window.addEventListener("load", init);
+window.addEventListener("DOMContentLoaded", init);
 window.addEventListener('resize',resize)
 
 

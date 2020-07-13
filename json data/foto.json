@@ -1,0 +1,37 @@
+[
+    {
+        "text": "jakiś opis",
+        "imageUrl": "./img/other/foto/1.jpg",
+        "miniature": "./img/other/foto/1.jpg"
+    },
+    {
+        "text": "jakiś opis",
+        "imageUrl": "./img/other/foto/2.jpg",
+        "miniature": "./img/other/foto/12.jpg"
+    },
+    {
+        "text": "jakiś opis",
+        "imageUrl": "./img/other/foto/3.jpg",
+        "miniature": "./img/other/foto/3.jpg"
+    },
+    {
+        "text": "jakiś opis",
+        "imageUrl": "./img/other/foto/4.jpg",
+        "miniature": "./img/other/foto/4.jpg"
+    },
+    {
+        "text": "jakiś opis",
+        "imageUrl": "./img/other/foto/5.jpg",
+        "miniature": "./img/other/foto/5.jpg"
+    },
+    {
+        "text": "jakiś opis",
+        "imageUrl": "./img/other/foto/6.jpg",
+        "miniature": "./img/other/foto/6.jpg"
+    },
+    {
+        "text": "jakiś opis",
+        "imageUrl": "./img/other/foto/7.jpg",
+        "miniature": "./img/other/foto/7.jpg"
+    }
+]
