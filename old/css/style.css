@@ -1,0 +1,164 @@
+body
+{
+    margin: 0;
+    background-image: url("../img/background/2.jpg");
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+
+    /*height: 100vh;*/
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.background_shadow
+{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: #0009;
+ z-index: -1;
+}
+
+#preloader
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.min_width
+{
+    min-width: 1200px;
+    
+}
+
+#about
+{
+    width: 100%;
+  
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    box-sizing: border-box;
+    padding: 19px;
+
+}
+.about_child
+{
+    width: 100%;
+    max-width: 1200px;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+#about h1 
+{
+    font-size: 60px;
+    position: relative;
+
+}
+#about h2
+{
+    
+    font-size: 24px;
+    font-weight: lighter;
+    position: relative;
+}
+#about p 
+{
+    font-size: 19px;
+    font-weight: normal;
+    font-family: Georgia;
+    font-style: italic;
+    position: relative;
+}
+
+nav 
+{
+    height: 70px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#nav_links
+{
+    display: flex;
+
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    position: relative;
+    
+    transform: rotate(-10deg);
+    
+    
+}
+#nav_links.Animate{
+   
+    transition        : 0.3s linear;
+    transform : rotate(0deg) ;
+}
+
+nav a:hover{
+   
+    background-color: #44bc4499;
+    font-size: 24px;
+}
+nav a 
+{
+    list-style: none;
+    text-decoration: none;
+    align-self: center;
+    color: white;
+    width: 150px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    font-size: 23px;
+   transition-duration: 1s;
+   margin-left: 5px;
+
+    
+text-transform: uppercase;
+font-family: "Segoe UI",Arial,sans-serif;
+font-weight: bold;
+align-self: center;
+}
+
+
+
+
+#nav_links a.active {
+    background-color: #44bc4499;
+    font-size: 24px;
+}
+
+.nav_button
+{
+    display: none;
+}
+
+.tab-content {
+    display: none;
+    padding:1em;
+    font-size:2em;
+  
+    border-radius:2px;
+}

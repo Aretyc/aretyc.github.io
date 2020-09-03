@@ -1,0 +1,116 @@
+@media only screen and (max-width: 1200px) {
+    .min_width
+    {
+        min-width: 1024px;
+    }
+    main{
+        width: 980px;
+    }
+    .mytable-column
+    {
+        width: 108px;
+    }
+    .mytable-row {
+        padding-left: 8px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .min_width
+    {
+        min-width: 768px;
+    } 
+    main {
+        width: 730px;
+        padding: 25px;
+    }
+    .main_elements_content {
+        padding-left: 35px;
+        padding-right: 0px;
+    }
+    .mytable-column {
+        width: 87px;
+    }
+    .mytable-column p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    
+    .min_width
+    {
+        min-width: 480px;
+    }
+    main{
+        width: 470px;
+    }
+    .mainElements {
+        width: 100%;
+    }
+
+    .main_icons {
+        width: 100px;
+        height: 100px;
+    }
+    .less_content
+    {
+      display: none;
+    }
+    .main_elements_content
+    {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .main_elements_content h1 {
+        font-size: 40px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    video{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .gallery-video
+    {
+    padding-left: 0px;
+    }
+    .mytable {
+        flex-direction: column;
+    }
+    .mytable-column {
+        width: 100%;
+    }
+    .mytable-column p {
+
+        font-size: 16px;
+    
+    }
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+        .min_width
+        {
+            min-width: 320px;
+        }
+        main {
+            width: 318px;
+            margin-top: 51px;
+        }
+        .main_elements_content {
+            padding-left: 14px;
+        }
+        .main_elements_content h1 {
+            font-size: 25px;
+        }
+        .main_icons {
+            width: 85px;
+            height: 85px;
+        }
+}
+    
+
