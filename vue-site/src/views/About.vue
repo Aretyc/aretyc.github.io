@@ -1,7 +1,9 @@
 <template>
+
   <div class="about">
-    <div class="background_shadow">
-	</div>
+     <myMenu></myMenu>
+    <div class="background_shadow"></div>
+    <div class="background"></div>
 	<div id="preloader">
 		<!-- <img src="./img/loader.gif" alt="loader"> -->
 	</div>
@@ -18,8 +20,7 @@
 			<p id="about_title_p" class="about_child">
 					On this site you can see my projects 
 			</p>
-	</div>
-  <myMenu></myMenu>
+	</div> 
   </div>
 </template>
 
@@ -32,6 +33,12 @@
   }
 }
 </script>
+
+<style >
+.background{
+  background-image: url("../assets/background/2.jpg");
+}
+</style>
 
 <style scoped>
 .background_shadow
@@ -61,7 +68,10 @@
     min-width: 1200px;
     
 }
-
+.about{
+    height: 100vh;
+    display: flex;
+}
 #about
 {
     width: 100%;

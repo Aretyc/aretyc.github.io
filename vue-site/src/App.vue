@@ -21,7 +21,9 @@ body
 {
     margin: 0;
     padding: 0;
-    /* background-image: url("../img/background/2.jpg"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
@@ -32,5 +34,17 @@ body
     justify-content: space-around;
     overflow-x: hidden;
     overflow-y: scroll;
+}
+.background_shadow, .background
+{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #0009;
+  z-index: -1;
+  top: 0;
+}
+.background{
+  z-index: -2;
 }
 </style>
