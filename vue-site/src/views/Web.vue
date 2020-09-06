@@ -13,32 +13,34 @@
               <div class="main_elements_content">
                 <h1>{{article.title}}</h1>
                 <p class="less_content">{{article.content}}</p>
-                <div class="more_content">
-                  <p>{{article.moreContent}}</p>
-                  <div class="mytable">
-                    <div class="mytable-column">
-                      <p class="mytable-row1 mytable-row">Date</p>
-                      <p class="mytable-row2 mytable-row" >{{article.date}}</p>
+                <transition name="toggle">
+                  <div class="more_content" v-if="article.show">
+                    <p>{{article.moreContent}}</p>
+                    <div class="mytable">
+                      <div class="mytable-column">
+                        <p class="mytable-row1 mytable-row">Date</p>
+                        <p class="mytable-row2 mytable-row" >{{article.date}}</p>
+                      </div>
+                      <div class="mytable-column">
+                        <p class="mytable-row1 mytable-row">technology</p>
+                        <p class="mytable-row2 mytable-row" >{{article.technology}}</p>
+                      </div>
+                      <div class="mytable-column">
+                        <p class="mytable-row1 mytable-row">Page</p>
+                        <p class="mytable-row2 mytable-row" ><a href="">link</a></p>
+                      </div>
+                      <div class="mytable-column">
+                        <p class="mytable-row1 mytable-row">Project</p>
+                        <p class="mytable-row2  mytable-row">none</p>
+                      </div>
+                      <div class="mytable-column">
+                        <p class="mytable-row1 mytable-row">GitHub</p>
+                        <p class="mytable-row2  mytable-row"><a href="">link</a></p>
+                      </div>
                     </div>
-                    <div class="mytable-column">
-                      <p class="mytable-row1 mytable-row">technology</p>
-                      <p class="mytable-row2 mytable-row" >{{article.technology}}</p>
-                    </div>
-                    <div class="mytable-column">
-                      <p class="mytable-row1 mytable-row">Page</p>
-                      <p class="mytable-row2 mytable-row" ><a href="">link</a></p>
-                    </div>
-                    <div class="mytable-column">
-                      <p class="mytable-row1 mytable-row">Project</p>
-                      <p class="mytable-row2  mytable-row">none</p>
-                    </div>
-                    <div class="mytable-column">
-                      <p class="mytable-row1 mytable-row">GitHub</p>
-                      <p class="mytable-row2  mytable-row"><a href="">link</a></p>
-                    </div>
-                  </div>
-              </div>
-              <button class="element_button">read more</button>
+                </div>
+              </transition>
+              <button class="element_button" v-on:click="article.show=!article.show">read more</button>
             </div>
           </div>
         </main>      
@@ -67,6 +69,48 @@
   }
 }
 </script>
+
+<style scoped>
+.toggle-enter-active{
+
+ animation: show .7s ;
+}
+.toggle-leave-active{
+  animation: hide .7s ;
+}
+
+@keyframes show {
+  0% {
+    height: 0;
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  70% {
+    
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes hide {
+   0% {
+    height: auto;
+    opacity: 1;
+  }
+  70% {
+    /* height: 300px;  */
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+</style>
+
 
 
 <style scoped>
@@ -164,7 +208,7 @@ main
 }
 .more_content
 {
-    display: none;
+    /* display: none; */
     margin-top: 20px !important;
     margin-bottom: 20px !important;
 
