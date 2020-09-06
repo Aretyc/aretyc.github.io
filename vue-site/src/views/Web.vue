@@ -214,4 +214,38 @@ main
 
 }
 
+/* table */ 
+.mytable
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    
+}
+.mytable-column
+{
+    width: 140px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.mytable-row
+{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 28px;
+    text-align: left !important;
+    
+    
+}
+.mytable-row1 
+{
+    background-color: #46c046;
+    font-weight: 600 !important;
+}
+
 </style>
