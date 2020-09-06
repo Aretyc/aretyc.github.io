@@ -40,7 +40,10 @@
                     </div>
                 </div>
               </transition>
-              <button class="element_button" v-on:click="article.show=!article.show">read more</button>
+              <button class="element_button" v-on:click="article.show=!article.show">
+                <span v-if="!article.show">read more</span>
+                <span v-else>read less</span>
+              </button>
             </div>
           </div>
         </main>      
