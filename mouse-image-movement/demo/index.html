@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse-image-movement</title>
+    <script src="../mouse-image-movement.js"></script>
+</head>
+<style>
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #5da9f4;
+        height: 100vh;
+    }
+    div{
+        /* width: 100%; */
+    }
+    img{
+        width: 500px;
+    }
+</style>
+
+<body>
+    <div class="picture-container">
+        <img class="my-picture"  src="./img.jpg" alt="">
+    </div>
+
+
+    <script>
+        const mp = new moveablePicture('.picture-container',{
+                image: '.my-picture',
+                translationX: 20, // number pixels default 20px 
+                translationY: 20, // number pixels default 20px  
+                time: "4s",  // time default 2s
+        });
+    </script>
+</body>
+</html>
