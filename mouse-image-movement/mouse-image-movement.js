@@ -26,11 +26,15 @@ class moveablePicture{
         }
         this.image.style.transition = this.time;
 
-        if(!this.error)
-            this.element.addEventListener('mousemove',(e)=>{
-                this.move(e);
-            });
+        if(!this.error){
+            this.element.addEventListener('mousemove',(e)=>{this.move(e);});
+            this.element.addEventListener('mouseout',e=>{this.normal();});
+        }
+            
     }
+    normal(){
+        this.image.style.transform= `translate(0px, 0px)`; 
+    } 
 
     move(e){
         let x = 0;
@@ -38,7 +42,6 @@ class moveablePicture{
         if (this.oldX < e.pageX) x= -1*this.translationX; else x=this.translationX;
         if (this.oldY < e.pageY) y= -1*this.translationY; else y=this.translationY;
         this.image.style.transform= `translate(${x}px, ${y}px)`;
-
         this.oldX = e.pageX;
         this.oldY = e.pageY;
     }
